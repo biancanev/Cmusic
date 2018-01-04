@@ -51,7 +51,7 @@
 <input type="text" id="username">
 <p>Password</p>
 <input type="password" id="password">
-<button onclick="checkPassword()">
+<button onclick="checkPassword()">Submit</button>
 </form>
 </div>
 <p id="error-message">
@@ -82,7 +82,7 @@ function checkPassword(){
   } else{
     if(passwordAPI == password){
       document.getElementById("after-password").style.visibility = "visible";
-      document.getElementById("after-password").style.visiblity = "hidden";
+      document.getElementById("before-password").style.visiblity = "hidden";
   } else{
     attempts = attempts - 1;
     document.getElementById("error-message").innerHTML = "Incorrect password. You have " + attempts + " attempts left";
