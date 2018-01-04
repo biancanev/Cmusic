@@ -1,1 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>C Music</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.status-bar{
+	display: inline-block;
+	}
+.thumbs_up{
+	display: inline-block;
+	opacity: 0.8;
+	}
+.thumbs_down{
+	display: inline-block;
+	opacity: 0.8;
+	}
+.thumbs_up:hover{
+	color: green;
+	animation-name: fade-in;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	-webkit-animation-name: fade-in;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: 1;
+	}
+.thumbs_down:hover{
+	color: red;
+	animation-name: fade-in;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	-webkit-animation-name: fade-in;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: 1;
+	}
+@keyframes fade-in{
+	from{opacity:0.8;}
+	to{opacity:1;}
+	}
+@-webkit-keyframes fade-in{
+	from{opacity:0.8;}
+	to{opacity:1;}
+	}
+</style>
+<body class="w3-light-grey">
 
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>CMusic</b></h1>
+ <p>A website made by <span class="w3-tag">Cloud Eight</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+<h1><u>All Songs</u></h1>
+  <hr>
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="/background-webpage-1st.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3 id="jazz_band_joey"><b>Jazz Band Joey (Instrumental)</b></h3>
+      <h5>An instrumental, <span class="w3-opacity">December 18, 2017</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>No Description</p>
+      	<audio controls>
+		      <source src="xbpzQwOvKW0H.128.mp3" type="audio/mpeg">
+		      Your browser does not support this audio format.
+	      </audio>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+		<p class="status-bar"><span class="likebtn-wrapper" data-identifier="item_1"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="/scenery_for_song2.jpg" alt="Norway" style="width:100%">
+    <div class="w3-container">
+      <h3 id="maybe_later"><b>Maybe Later</b></h3>
+      <h5>An Improv, <span class="w3-opacity">December 17, 2017</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>No description</p>
+      	<audio controls>
+		      <source src="xbpzQwOvKW0H.128.mp3" type="audio/mpeg">
+		      Your browser does not support this audio format.
+	      </audio>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p class="status-bar"><span class="likebtn-wrapper" data-ef_voting="bounce" data-identifier="item_2"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Blog Entry-->
+  <div class="w3-card-4 w3-margin w3-white">
+<center> <img src="/standard_image_holder.jpg" alt="Norway" style="width:30%"></center>
+    <div class="w3-container">
+      <h3 id="think_about_it"><b>Think About It</b></h3>
+      <h5>A Soundtrack, <span class="w3-opacity">November 24, 2017</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>No description</p>
+      	<audio controls>
+		      <source src="xbpzQwOvKW0H.128.mp3" type="audio/mpeg">
+		      Your browser does not support this audio format.
+	      </audio>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p class="status-bar"><span class="likebtn-wrapper" data-ef_voting="bounce" data-identifier="item_3"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+	<!--Blog Entry-->
+  <div class="w3-card-4 w3-margin w3-white">
+	  <center> <img src="/standard_image_holder.jpg" alt="Norway" style="width:30%"></center>
+    <div class="w3-container">
+      <h3 id="find_someone_new"><b>Find Someone New</b></h3>
+      <h5>An Improv, <span class="w3-opacity">November 14, 2017</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>No description</p>
+      	<audio controls>
+		      <source src="xbpzQwOvKW0H.128.mp3" type="audio/mpeg">
+		      Your browser does not support this audio format.
+	      </audio>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p class="status-bar"><span class="likebtn-wrapper" data-ef_voting="bounce" data-identifier="item_4"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="/html-advertisment-1.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Cloud Eight</b></h4>
+      <p>Get your free Website today!</p>
+    </div>
+  </div><hr>
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+	<center>
+  <p>Powered by <a href="http://cloudeight.ml/" target="_blank">Cloud Eight</a></p>
+  <a href="https://soundcloud.com/connor-park-930971469"><i class="fa fa-soundcloud" style="fontsize:48px;"></i></a><span></span> <a href=""><i class="fa fa-instagram" style="fontsize:48px;"></i></a>
+	</center>
+</footer>
+<script>
+function checkLike(section){
+	if(section == 1){
+	document.getElementById("l1").style.color = "green";	
+	} elif(section == 2){
+	document.getElementById("l2").style.color = "green";
+	} elif(section == 3){
+	document.getElementById("l3").style.color = "green";
+	} elif(section == 4){
+	document.getElementById("l4").style.color = "green";	
+	}
+}
+function checkDislike(section){
+	if(section == 1){
+	document.getElementById("d1").style.color = "red";	
+	} elif(section == 2){
+	document.getElementById("d2").style.color = "red";
+	} elif(section == 3){
+	document.getElementById("d3").style.color = "red";
+	} elif(section == 4){
+	document.getElementById("d4").style.color = "red";	
+	}
+}
+</script>
+	<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+	<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+	<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+			<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+</body>
+</html>
