@@ -85,7 +85,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
-		<p class="status-bar"><p onclick="checkLike(1)" class="thumbs_up"> <i class="fa fa-thumbs-o-up" id="l1" style="font-size:24px;"></i> </p> <p onclick="checkDislike(1)" class="thumbs_down"> <i class="fa fa-thumbs-o-down" id="d1" style="font-size:24px;"></i ></p><span class="w3-padding-large w3-right"><b>Likes  </b> <span class="w3-tag id="likes1">2</span></span></p>
+		<p class="status-bar"><span class="likebtn-wrapper" data-identifier="item_1"></span><span class="w3-padding-large w3-right"><b>Likes  </b> <span class="w3-tag id="likes1">2</span></span></p>
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
-          <p class="status-bar"><p class="thumbs_up" onclick="checkLike(2)"><i class="fa fa-thumbs-o-up" id="l2" style="font-size:24px;"></i></p> <p class="thumbs_down" onclick="checkDislike(2)"><i class="fa fa-thumbs-o-down" id="d2" style="font-size:24px;"></i></p><span class="w3-padding-large w3-right"><b>Likes  </b> <span class="w3-badge" id="likes2">0</span></span></p>
+          <p class="status-bar"><span class="likebtn-wrapper" data-identifier="item_1"></span><span class="w3-padding-large w3-right"><b>Likes  </b> <span class="w3-badge" id="likes2">0</span></span></p>
         </div>
       </div>
     </div>
@@ -134,7 +134,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
-          <p class="status-bar"><p class="thumbs_up" onclick="checkLike(3)"><i class="fa fa-thumbs-o-up" id="l3" style="font-size:24px;"></i></p> <p class="thumbs_down" onclick="checkDislike(3)"><i class="fa fa-thumbs-o-down" id="d3" style="font-size:24px;"></i></p><span class="w3-padding-large w3-right"><b>Likes  </b> <span class="w3-badge" id="likes3">0</span></span></p>
+          <p class="status-bar"><span class="w3-padding-large w3-right"><b>Likes  </b> <span class="w3-badge" id="likes3">0</span></span></p>
         </div>
       </div>
     </div>
@@ -157,7 +157,7 @@ and is wrapped around the whole page content, except for the footer in this exam
           <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
-          <p class="status-bar"><p class="thumbs_up" onclick="checkLike(4)"><i class="fa fa-thumbs-o-up" id="l4" style="font-size:24px;"></i></p> <p class="thumbs_down" onclick="checkDislike(4)"><i class="fa fa-thumbs-o-down" id="d4" style="font-size:24px;"></i></p><span class="w3-padding-large w3-right"><b>Likes  </b> <span class="w3-badge" id="likes4">0</span></span></p>
+          <p class="status-bar"><span class="likebtn-wrapper" data-identifier="item_1"></span></p><span class="w3-padding-large w3-right"><b>Likes  </b> <span class="w3-badge" id="likes4">0</span></span></p>
         </div>
       </div>
     </div>
@@ -305,5 +305,6 @@ function checkDislike(section){
 	}
 }
 </script>
+			<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
 </body>
 </html>
