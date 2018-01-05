@@ -77,14 +77,15 @@ function checkPassword(){
   var passwordAPI = "N9TT-9G0A-B7FQ-RANC";
   var attempts = 5;
   var access = false;
-  var password = document.getElementById("password")
+  var password = document.getElementById("password").value
   while(access == false){
     if(attempts < 1){
        location.replace("http://cmusic.ml/attempts-0")
      } else{
        if(passwordAPI == password){
+         var access = true;
          document.getElementById("after-password").style.visibility = "visible";
-          document.getElementById("before-password").style.visiblity = "hidden";
+         document.getElementById("before-password").style.visiblity = "hidden";
      } else{
          attempts = attempts - 1;
          document.getElementById("error-message").innerHTML = "Incorrect password. You have " + attempts + " attempts left";
