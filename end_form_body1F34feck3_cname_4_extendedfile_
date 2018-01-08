@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>End Form</title>
+<style>
+.endform{
+  backround-color: #78d430;
+}
+</style>
+</head>
+<body>
+<h1 id="end_form">Form Submited . . .</h1>
+<script>
+</script>
+</body>
+</html>
