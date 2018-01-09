@@ -1,7 +1,7 @@
 # Cmusic
 Music site for Connor Park
 
-[![Build Status](http://cmusic.ml/)](http://cmusic.ml/)
+[![Build Status](https://travis-ci.org/ericsomdahl/python-bittrex.svg?branch=master)](https://travis-ci.org/ericsomdahl/python-bittrex)
 ### Made Using
 ```html
 </html>
