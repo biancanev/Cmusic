@@ -88,15 +88,16 @@ and is wrapped around the whole page content, except for the footer in this exam
   <hr>
   <!-- Blog entry -->
   <div class="w3-card-4 w3-margin w3-white">
+    <p class="rank_1">&#9812;</p>
     <img src="/background-webpage-1st.jpg" alt="Nature" style="width:100%">
     <div class="w3-container">
-	    <h3 id="jazz_band_joey"><b>Jazz Band Joey (Instrumental) <p class="rank_1">&#9812;</p></b></h3>
+	    <h3 id="jazz_band_joey"><b>Jazz Band Joey (Instrumental) </b></h3>
       <h5>An instrumental, <span class="w3-opacity">December 18, 2017</span></h5>
     </div>
 
     <div class="w3-container">
       <p>This is what the Jazz Band Joey theme song currently looks like! I am currently working on lyrics. What do you think? Let me know!</p>
-      	<audio controls>
+      	<audio controls id="audio">
 		      <source src="http://cmusic.ml/jazz-band-joey.mp3" type="audio/mpeg">
 		      Your browser does not support this audio format.
 	      </audio>
@@ -122,7 +123,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <div class="w3-container">
       <p>This is a track I'm planning to complete, Should I keep the solo? Let me know! This will be the first track made using Ableton</p>
-      	<audio controls>
+      	<audio controls id="audio">
 		      <source src="http://cmusic.ml/maybe-later.mp3" type="audio/mpeg">
 		      Your browser does not support this audio format.
 	      </audio>
@@ -146,7 +147,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <div class="w3-container">
       <p>No Description. &#9785;</p>
-      	<audio controls>
+      	<audio controls id="audio">
 		      <source src="think-about-it.mp3" type="audio/mpeg">
 		      Your browser does not support this audio format.
 	      </audio>
@@ -170,7 +171,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <div class="w3-container">
       <p>No description. &#9785;</p>
-      	<audio controls>
+      	<audio controls id="audio">
 		      <source src="http://cmusic.ml/find-someone-new.mp3" type="audio/mpeg">
 		      Your browser does not support this audio format.
 	      </audio>
@@ -194,7 +195,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <div class="w3-container">
       <p>No description &#9785;</p>
-      	<audio controls>
+      	<audio controls id="audio">
 		      <source src="http://cmusic.ml/welcome-back.mp3" type="audio/mpeg">
 		      Your browser does not support this audio format.
 	      </audio>
@@ -218,7 +219,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <div class="w3-container">
       <p>No description. &#9785;</p>
-      	<audio controls>
+      	<audio controls id="audio">
 		      <source src="http://cmusic.ml/lantern.mp3" type="audio/mpeg">
 		      Your browser does not support this audio format.
 	      </audio>
@@ -243,7 +244,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <div class="w3-container">
       <p>No description &#9785;</p>
-      	<audio controls>
+      	<audio controls id="audio">
 		      <source src="http://cmusic.ml/welcome-back.128.mp3" type="audio/mpeg">
 		      Your browser does not support this audio format.
 	      </audio>
@@ -268,7 +269,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <div class="w3-container">
       <p>No description &#9785;</p>
-      	<audio controls>
+      	<audio controls id="audio">
 		      <source src="http://cmusic.ml/r-plus-m.mp3" type="audio/mpeg">
 		      Your browser does not support this audio format.
 	      </audio>
@@ -293,7 +294,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <div class="w3-container">
       <p>No description &#9785;</p>
-      	<audio controls>
+      	<audio controls id="audio">
 		      <source src="http://cmusic.ml/produce.mp3" type="audio/mpeg">
 		      Your browser does not support this audio format.
 	      </audio>
@@ -338,6 +339,15 @@ and is wrapped around the whole page content, except for the footer in this exam
 	</center>
 </footer>
 <script>
+function checkAudio(){	
+var aud = getElementById("audio");
+var aud_on_gif = getElementById("gif");
+	if(vid.paused == true){
+		aud_on_gif.style.visibility = "visible";	
+	}else{
+		aud_on_gif.style.visibility = "hidden";	
+	}
+}
 function checkLike(section){
 	if(section == 1){
 	document.getElementById("l1").style.color = "green";	
