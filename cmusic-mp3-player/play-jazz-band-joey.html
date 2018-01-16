@@ -27,15 +27,31 @@ audio{
   top:50%;
   margin-bottom:0%;
 }
+	.wrapper {
+    display: table;
+    width: 100%;
+    height: 370px; 
+    border: 1px solid #c0c0c0; 
+}
+
+.holder {
+    text-align: center;
+    display: table-cell; 
+    vertical-align: middle;
+}
 </style>
 </head>
 <body>
 <h3>Jazz Band Joey</h3>
 	<center>
+		<div class="wrapper">
+		<div class="holder">
      <audio align="middle" controls>
 		    <source src="http://cmusic.ml/jazz-band-joey.mp3" type="audio/mpeg">
 		    Your browser does not support this audio format.
 	    </audio>
+		</div>
+		</div>
 		<br>
 		<br>
 		<br>
