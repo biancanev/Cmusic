@@ -6,6 +6,36 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.c8-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 tr:hover {background-color: #f5f5f5;}
 table {
@@ -100,7 +130,28 @@ and is wrapped around the whole page content, except for the footer in this exam
 </table>
   </div>
   <hr>  
+</div>
+<div class="c8-form">
+  <form action="/end_form_body1F34feck3_cname_4_extendedfile_">
+    <label for="email">Email</label>
+    <input type="text" id="email" name="firstname" placeholder="Your email..">
 
+    <label for="sname">Song Name</label>
+    <input type="text" id="sname" name="lastname" placeholder="Your last name..">
+    
+    <label for="sid">Song ID</label>
+    <input type="text" id="sid" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="usa">USA</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
 <!-- END w3-content -->
 </div>
 
