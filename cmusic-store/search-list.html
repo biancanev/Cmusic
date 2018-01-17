@@ -6,6 +6,13 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
+.subtotal{
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
+	color: #a1a1a1;
+	padding: 2px;
+	}
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -150,7 +157,10 @@ and is wrapped around the whole page content, except for the footer in this exam
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
     </select>
-  
+    <h5>Subtotal:</h5>
+    <div class="subtotal">
+	<div class="value">0 USD</div>
+    </div>
     <input type="submit" value="Submit">
   </form>
 </div>
