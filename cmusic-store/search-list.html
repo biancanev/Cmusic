@@ -150,16 +150,16 @@ and is wrapped around the whole page content, except for the footer in this exam
 	<h3>Buy A Song:</h3>
   <form action="/end_form_body1F34feck3_cname_4_extendedfile_">
     <label for="email">Email</label>
-    <input type="text" id="email" name="firstname" placeholder="Your email..">
+    <input type="text" id="email" name="firstname" placeholder="Your email.." required>
 
     <label for="sname">Song Name</label>
-    <input type="text" id="sname" name="lastname" placeholder="Song Name..">
+    <input type="text" id="sname" name="lastname" placeholder="Song Name.." required>
     
     <label for="sid">Song ID</label>
-    <input type="text" id="sid" name="lastname" placeholder="Song ID..">
+    <input type="text" id="sid" name="lastname" placeholder="Song ID.." required>
 
     <label for="country">Country</label>
-    <select id="country" name="country" onclick="addPrices()">
+    <select id="country" name="country" onclick="addPrices()" required>
       <option value="usa">USA</option>
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
