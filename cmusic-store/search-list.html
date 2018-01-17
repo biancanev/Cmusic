@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
+.error{
+	background-color: red;
+	}
 .value{
      display: inline-block;
 	}
@@ -102,17 +105,17 @@ and is wrapped around the whole page content, except for the footer in this exam
   <tr>
     <td>Jazz-Band-Joey</td>
     <td>N/a</td>
-    <td>N/a</td>
+    <td>A4DG3L</td>
   </tr>
   <tr>
     <td>Mayb-Later</td>
     <td>N/a</td>
-    <td>N/a</td>
+    <td>D4S511</td>
   </tr>
   <tr>
     <td>Think-About-It</td>
     <td>N/a</td>
-    <td>N/a</td>
+    <td>F3RYL1</td>
   </tr>
   <tr>
     <td>Find-Someone-New</td>
@@ -129,8 +132,8 @@ and is wrapped around the whole page content, except for the footer in this exam
     <td>N/a</td>
     <td>N/a</td>
   </tr>
-  <tr>
-    <td>R-+-M</td>
+  <tr class="error">
+    <td>R-+-M*</td>
     <td>N/a</td>
     <td>N/a</td>
   </tr>
@@ -156,7 +159,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     <input type="text" id="sid" name="lastname" placeholder="Your last name..">
 
     <label for="country">Country</label>
-    <select id="country" name="country">
+    <select id="country" name="country" onclick="addPrices()">
       <option value="usa">USA</option>
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
@@ -172,6 +175,11 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- END w3-content -->
 </div>
 <script>
+function addPrices(){
+    var price;
+	var songID = document.getElementById("sid").value;
+    if(songID == "A4DG3L")
+}
 </script>
 </body>
 </html>
