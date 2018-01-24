@@ -368,13 +368,12 @@ and is wrapped around the whole page content, except for the footer in this exam
 </footer>
 <script>
 function pin_check(){
-	var pin = document.getElementById("pin").value;
-	var pin_len = pin.length
-	if(pin_len == 5){
-		window.location.href="http://cmusic.ml/null-value"
-	} else{
-		document.getElementById("response").innerHTML = "Your PIN is incorrect."
-	}
+    var pin = document.getElementById("pin").value;
+    if(pin.length == 5){
+    	document.getElementById("demo").innerHTML = "CORRECT.";
+    } else{
+    	document.getElementById("demo").innerHTML = "YOUR PIN IS INCORRECT";
+    }
 }
 //function checkAudio(){	
 //	var i = 1
