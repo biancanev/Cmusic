@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
+#response{
+	color: red;
+	}
 .audio_playing{
 	background-color: black:
 	color: white;
@@ -337,8 +340,9 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-container w3-white">
 <form>
 	<p>Please Enter Your PIN number to go to the next page
-	<input type="password" placeholder="PIN">
-	<input type="submit" value="Go">
+	<input type="password" placeholder="PIN" id="pin">
+	<button onclick="pin_check()">GO</button>
+	<p id="response"></p>
 </form>
 <p>Go <a href="https://repl.it/@biancano/TPP-COMAND-PROMPT-TERMINAL">here</a> to register your new PIN.</p>
     </div>
@@ -363,6 +367,15 @@ and is wrapped around the whole page content, except for the footer in this exam
 	</center>
 </footer>
 <script>
+function pin_check(){
+	var pin = document.getElementById("pin").value;
+	var pin_len = pin.length
+	if(pin_len == 5){
+		window.location.href="http://cmusic.ml/null-value"
+	} else{
+		document.getElementById("response").innerHTML = "Your PIN is incorrect."
+	}
+}
 //function checkAudio(){	
 //	var i = 1
 //	var aud = getElementById("audio");
